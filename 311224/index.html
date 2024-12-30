@@ -30,22 +30,29 @@
     <!-- ============================================= -->
     <script>
       // Custom Disini
-      await swalo.fire({ title: "Hai wia" });
-      await swalo.fire({ title: "Saya minta waktunya bentar yaa" });
-      await swalo.fire({ title: "Saya mau ngomong sesuatu ni" });
-      await swalo.fire({ title: "Diperhatikan baik baik oke" });
-      await swalo.fire({ title: "saya sayang banget sama koe cak"});
+     async function start() {
+        // Untuk menambah pop up ucapan tambahkan seperti format dibawah ini
+        playMusik();
+         await swalo.fire({ title: "Hai wia" });
+         await swalo.fire({ title: "Saya minta waktunya bentar yaa" });
+         await swalo.fire({ title: "Saya mau ngomong sesuatu ni" });
+         await swalo.fire({ title: "Diperhatikan baik baik oke" });
+         await swalo.fire({ title: "saya sayang banget sama koe cak"});
+
+        // Dibawah ini jangan diedit
+        $(".loading").fadeOut("slow");
+        }
 
       
-      var pengirim = "Hendrik Siregar Tol Cipularang";
-      var musik = "Music.mp3";
-      var ucapansatu = "Ucapan 1";
-      var ucapandua = "Ucapan 2";
-      var ucapantiga = "Ucapan 3";
-      // Untuk ucapan saat ini maksimal 3
+        var pengirim = "Hendrik Siregar Tol Cipularang";
+        var musik = "Music.mp3";
+        var ucapansatu = "Ucapan 1";
+        var ucapandua = "Ucapan 2";
+        var ucapantiga = "Ucapan 3";
+        // Untuk ucapan saat ini maksimal 3
 
-      var background = "foto.jpg";
-      var noWhatsapp = "6285244716946";
+        var background = "foto.jpg";
+        var noWhatsapp = "6285244716946";
 
       async function start() {
         // Untuk menambah pop up ucapan tambahkan seperti format dibawah ini
