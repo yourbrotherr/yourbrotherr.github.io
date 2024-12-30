@@ -35,7 +35,7 @@
         var musik = "Music.mp3";
         var ucapansatu = "Selamat Tahun baru yaa sa cuma mau bilang aja maaf kalau selama ditahun kemarin saya sering kecewain ngana ada sikap dan tindakan yang tanpa sadar melukai atau menyakiti, sa benar-benar minta maaf. saya ga bermaksud sama sekali wia serius ini sya tau pasti ko juga capek kan kadang ajak sa bercanda tapi ga nyambung atau mungkin ko excited saya malah terkesan sebaliknya. sa benar-benar minta maaf ya jujur saya seneng kok dengerin ceritamu, apapun itu soal kucing, soal makanan dan lain sebagainya yang mungkin sa gabisa sebutin satu satu asli sa beneran senang dan sangat menghargai akan hal itu tapi sekali lagi maaf kalau mungkin saya responnya terkesan ga excited, atau mungkin terkesan biasa aja sa beneran minta maaf wia";
         var ucapandua = "saya juga lagi berproses wia, maaf kalau mungkin selama ini ko sering ngajak main atau ketemu saya malah ga bisa, maaf juga kalau mungkin sikap saya ada yang terkesan melarang atau ngatur ngatur saya minta maaf wia soal hal hal apapun yang mungkin terkesan rahasia, bukannya gamau kasitau tapi sa lagi usahain waktu yang tepat untuk cerita semuanya";
-        var ucapantiga = "Ucapan 3";
+        var ucapantiga = "semua hal yang udah terjadi ditahun kemarin sa minta maaf yaa. mengenai hal hal serius yang pernah kita bahas kemarin kemarin, itu lagi saya usahain semuanya wia. jika ko berkenan, ijinkan saya untuk memperbaiki semuanya boleh ndak?";
         // Untuk ucapan saat ini maksimal 3
 
         var background = "foto.jpg";
@@ -45,8 +45,9 @@
         // Untuk menambah pop up ucapan tambahkan seperti format dibawah ini
         playMusik();
         await swalo.fire({ title: "Hai wia" });
+        await swalo.fire({ title: "maaf saya mengganggu" });
         await swalo.fire({ title: "Saya minta waktunya bentar yaa" });
-        await swalo.fire({ title: "Ada yang mau saya omongin ni" });
+        await swalo.fire({ title: "Ada yang mau saya sampaikan" });
         await swalo.fire({ title: "Dibaca baik baik oke" });
 
         // Dibawah ini jangan diedit
@@ -54,10 +55,10 @@
       }
 
       async function kirimpesan() {
-        var { value: pesanku } = await swalo.fire({ imageUrl: "https://files.dariku.my.id/mylove/cutie1.gif", title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim" });
+        var { value: pesanku } = await swalo.fire({ imageUrl: "https://files.dariku.my.id/mylove/cutie1.gif", title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim ke Hendri" });
         klik.play();
         if (pesanku) {
-          await swalo.fire("Kirim pesannya ke wa aku ya");
+          await swalo.fire("Kirim pesannya langsung ke wa saya aja yaaa");
           if (noWhatsapp > 10) location.assign("https://wa.me/" + noWhatsapp + "?text=" + pesanku);
           else location.assign("https://wa.me/?text=" + pesanku);
         } else {
