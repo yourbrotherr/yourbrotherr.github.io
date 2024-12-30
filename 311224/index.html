@@ -20,7 +20,7 @@
     <div class="main">
       <div class="content">
         <div class="btn-mulai">
-          <p class="hilang1">Klik Aku</p>
+          <p class="hilang1">Klik disni</p>
           <p class="hilang2">Pesan selanjutnya</p>
           <p class="hilang3">Pesan selanjutnya</p>
           <p class="hilang4">Kirim Pesan</p>
@@ -42,10 +42,12 @@
 
       async function start() {
         // Untuk menambah pop up ucapan tambahkan seperti format dibawah ini
-        await swalo.fire({ title: "Ini Popup 1" });
         playMusik();
-        await swalo.fire({ title: "Ini Popup 2" });
-        await swalo.fire({ title: "Ini Popup 3" });
+        await swalo.fire({ title: "Hai wia" });
+        await swalo.fire({ title: "Saya minta waktunya bentar yaa" });
+        await swalo.fire({ title: "Saya mau ngomong sesuatu ni" });
+        await swalo.fire({ title: "Diperhatikan baik baik oke" });
+        await swalo.fire({ title: "saya sayang banget sama koe cak"});
 
         // Dibawah ini jangan diedit
         $(".loading").fadeOut("slow");
