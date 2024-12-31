@@ -20,10 +20,10 @@
     <div class="main">
       <div class="content">
         <div class="btn-mulai">
-          <p class="hilang1">Klik disini yaa wia</p>
+          <p class="hilang1">Klik Untuk Mulai</p>
           <p class="hilang2">Pesan selanjutnya</p>
           <p class="hilang3">Pesan selanjutnya</p>
-          <p class="hilang4">Kirim Pesan untuk hendri</p>
+          <p class="hilang4">Kirim Pesan Untuk Hendri</p>
         </div>
       </div>
     </div>
@@ -33,9 +33,9 @@
        
         var pengirim = "Hendrik Siregar Tol Cipularang";
         var musik = "Music.mp3";
-        var ucapansatu = "Selamat Tahun baru yaa hihihihi sa cuma mau bilang aja maaf kalau selama ditahun 2024 kemarin saya sering kecewain ngana ada sikap dan tindakan saya yang tanpa sadar melukai atau menyakiti ngana, sa benar-benar minta maaf. saya ga bermaksud sama sekali wia serius ini sya tau pasti ko juga capek kan kadang ajak sa bercanda tapi ga nyambung atau mungkin ko excited saya malah terkesan sebaliknya. sa benar-benar minta maaf ya ";
-        var ucapandua = "jujurly saya seneng kok dengerin ceritamu, apapun itu soal kucing, soal semua panggilan yang ko sematkan buat saya seperti cipriani, simanjuntak, siregar wkwkwkwwk, saya sangat menghargai semua itu wia. contoh lain kek soal kodok, soal alomani, soal bang windut, soal makanan, soal kita wkwkwkwk dan masih banyak lagi yang saya gabisa sebutin satu persatu. asli sa beneran senang banget dan sangat menghargai akan hal itu wia tapi sekali lagi maaf kalau mungkin saya responnya terkesan ga excited, atau mungkin terkesan biasa aja sa beneran minta maaf wia. saya juga sekarang lagi berproses wia, maaf kalau selama ini saya kurang peka sama koe, terlalu kaku, ga banyak ngomong kalau ketemu, terkesan cuek, I'm sorry wia. mungkin juga selama ini ko sering ngajak main atau ketemu saya malah ga bisa luangin waktu, mungkin juga sikap saya ada yang terkesan melarang atau ngatur ngatur sorry ya. soal hal hal apapun yang mungkin terkesan rahasia, bukannya gamau kasitau tapi sa lagi usahain waktu yang tepat untuk cerita semuanya";
-        var ucapantiga = "semua hal yang udah terjadi ditahun kemarin sa minta maaf yaa. mengenai segala hal serius yang pernah kita bahas kemarin kemarin, itu lagi saya usahain semuanya wia (termasuk mengenai perasaan saya ke koe), saya akan usahain jadi lebih baik lagi untuk kedepannya. jika ko berkenan, ijinkan saya untuk memperbaiki semuanya boleh ndak?";
+        var ucapansatu = "Selamat Tahun baru yaa adawiyah kocak hihihi sa cuma mau bilang aja maaf kalau selama ditahun 2024 kemarin saya sering kecewain ngana ada sikap dan tindakan saya yang tanpa sadar melukai atau menyakiti ngana, sa benar-benar minta maaf. saya ga bermaksud sama sekali wia serius ini sya tau pasti ko juga capek kan kadang ajak sa bercanda tapi ga nyambung atau mungkin ko excited banget, saya malah terkesan sebaliknya. sa benar-benar minta maaf ya ";
+        var ucapandua = "jujurly saya seneng kok dengerin ceritamu, apapun itu soal kucing, soal semua panggilan yang ko sematkan buat saya seperti cipriani, simanjuntak, siregar wkwkwkwwk, saya sangat menghargai semua itu wia. contoh lain kek soal kodok, soal alomani, soal bang windut, soal makanan, soal kita wkwkwkwk dan masih banyak lagi yang saya gabisa sebutin satu persatu. asli sa beneran senang banget dan sangat menghargai semua itu wia tapi sekali lagi maaf kalau mungkin saya responnya terkesan ga excited, atau mungkin terkesan biasa aja sa beneran minta maaf wia. saya juga sekarang lagi berproses wia, maaf kalau selama ini saya kurang peka sama koe, terlalu kaku, ga banyak ngomong kalau ketemu, terkesan cuek, I'm sorry wia. mungkin juga selama ini ko sering ngajak main atau ketemu saya malah ga bisa luangin waktu, mungkin juga sikap saya ada yang terkesan kek melarang atau ngatur ngatur sorry ya (ko juga pasti tau kan kenapa sikap saya macam begini) soal hal hal apapun yang mungkin terkesan rahasia, bukannya gamau kasitau tapi sa lagi usahain waktu yang tepat untuk ceritain semuanya";
+        var ucapantiga = "semua hal yang udah terjadi ditahun kemarin sa minta maaf yaa. mengenai segala hal serius yang pernah kita bahas kemarin kemarin, itu lagi saya usahain semuanya wia (termasuk mengenai perasaan saya ke koe yang gada alasannya ini), saya akan usahain jadi lebih baik lagi untuk kedepannya. jika ko berkenan, ijinkan saya untuk memperbaiki semuanya boleh ndak?";
         // Untuk ucapan saat ini maksimal 3
 
         var background = "foto.jpg";
@@ -45,10 +45,12 @@
         // Untuk menambah pop up ucapan tambahkan seperti format dibawah ini
         playMusik();
         await swalo.fire({ title: "Hai wia" });
-        await swalo.fire({ title: "maaf saya mengganggu" });
+        await swalo.fire({ title: "Maaf saya mengganggu" });
         await swalo.fire({ title: "Saya minta waktunya bentar yaa" });
+        await swalo.fire({ title: "5 sampai 10 menit aja kok" });
         await swalo.fire({ title: "Ada yang mau saya sampaikan" });
-        await swalo.fire({ title: "Dibaca baik baik oke" });
+        await swalo.fire({ title: "Dibaca baik baik oke"});
+        await swalo.fire({ title: "maap juga kalau semisal ada kata kata yang kurang berkenan yaa"});
 
         // Dibawah ini jangan diedit
         $(".loading").fadeOut("slow");
