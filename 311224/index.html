@@ -58,7 +58,7 @@
       }
 
       async function kirimpesan() {
-        var { value: pesanku } = await swalo.fire({ imageUrl: "https://files.dariku.my.id/mylove/cutie1.gif", title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim ke Hendri Siregarrr" });
+        var { value: pesanku } = await swalo.fire({ imageUrl: "https://files.dariku.my.id/mylove/cutie1.gif", title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim ke Hendri" });
         klik.play();
         if (pesanku) {
           await swalo.fire("Kirim pesannya langsung ke wa saya yaaa");
